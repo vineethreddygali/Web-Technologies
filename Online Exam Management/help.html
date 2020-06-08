@@ -1,0 +1,66 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Help</title>
+	</head>
+	<body>
+			<div class="navig" id="navigationbar">
+				<a href="Topic.php" style="border-right: 5px solid ; border-color: #dfe3ee;"> <img src="homeicon.png" alt="home icon" width="15" height="15">Home</a>
+				<a href="help.html" style="border-right: 5px solid ; border-color: #dfe3ee;">Help</a>
+			<div class="dropdown" style="float:right;">
+			<button class="dropbtn" style="padding-right:28px;"><img src="ac.jpg" alt="account icon" width="15" height="15" style="padding-right:8px; margin-top:1px;" >My Account 
+			</button>
+			<div class="dropdown-content">
+			<a href="profile.php">My Profile</a>
+			<a href="Registration.html">Sign Out</a>
+			</div>
+			</div> 
+				
+			</div>
+		<center><div class="container">
+		<center>
+			<h1 style="border-left: 40px solid #3B5998; border-right: 40px solid #3B5998;border-radius:50px;">- Help -</h1>
+			<p>See the solution for your problems.</p>
+			</center>
+			<hr>
+			<ol>
+				<li onclick="question1()">where can I find my scores <b>></b></li>
+				<p id="answer1"></p>
+				<li onclick="question2()">Can I retake my test <b>></b></li>
+				<p id="answer2"></p>
+				<li onclick="question3()" >Unable to give test <b>></b></li>
+				<p id="answer3"></p>
+				<li onclick="question4()">Duration of my test <b>></b></li>
+				<p id="answer4"></p>
+				<li onclick="question5()">Where can I give another test <b>></b></li>
+				<p id="answer5"></p>
+			</ol> 
+			
+
+			<form action="Topic.php">
+			<center>
+			<button type="submit" class="Button" value="Back">Back</a></button>
+			</form>
+			</center>
+			<hr>
+		</div>
+		<script>
+			function question1() {
+				document.getElementById("answer1").innerHTML = "Scores are avilable in My profile located in My Account in top right corner. ";
+			}
+			function question2() {
+				document.getElementById("answer2").innerHTML = "Yes you can retake the test any time and the old scores will be replaced with the new scores. ";
+			}
+			
+			function question3() {
+				document.getElementById("answer3").innerHTML = "Try switching Internet browser or Please try after 20 min as the website might be under maintance .";
+			}
+			function question4() {
+				document.getElementById("answer4").innerHTML = "Each test has the duration of 30min.";
+			}
+			function question5() {
+				document.getElementById("answer5").innerHTML = "You can give the next test as soon as each test ends or you can give test anytime from the home page";
+			}
+		</script>
+	</body>
+</html>
